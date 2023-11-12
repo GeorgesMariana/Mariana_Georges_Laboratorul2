@@ -37,6 +37,7 @@ namespace Mariana_Georges_Laboratorul2.Pages.Books
             }
             Book = book;
             ViewData["PublisherID"] = new SelectList(_context.Set<Publisher>(), "ID", "PublisherName");
+            ViewData["AuthorID"] = new SelectList(_context.Set<Author>(), "ID", "FirstName", "LastName");
 
             return Page();
         }
