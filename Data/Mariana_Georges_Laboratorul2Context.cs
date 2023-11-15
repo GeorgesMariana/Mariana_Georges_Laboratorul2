@@ -19,5 +19,7 @@ namespace Mariana_Georges_Laboratorul2.Data
         public DbSet<Mariana_Georges_Laboratorul2.Models.Publisher>? Publisher { get; set; }
 
         public DbSet<Mariana_Georges_Laboratorul2.Models.Author>? Author { get; set; }
+
+        public DbSet<Mariana_Georges_Laboratorul2.Models.Category>? Category { get; set; }
     }
 }
