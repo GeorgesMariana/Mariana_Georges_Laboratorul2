@@ -8,9 +8,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Mariana_Georges_Laboratorul2.Data;
 using Mariana_Georges_Laboratorul2.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Mariana_Georges_Laboratorul2.Pages.Publishers
 {
+    [Authorize(Roles = "Admin")]
     public class EditModel : PageModel
     {
         private readonly Mariana_Georges_Laboratorul2.Data.Mariana_Georges_Laboratorul2Context _context;
